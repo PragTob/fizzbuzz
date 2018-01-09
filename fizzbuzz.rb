@@ -10,6 +10,4 @@ def fizzbuzz(n)
   end
 end
 
-(1..100).each do |n|
-  puts fizzbuzz(n)
-end
+(1..100).each {|n| puts fizzbuzz(n)}
