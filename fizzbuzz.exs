@@ -1,8 +1,8 @@
 defmodule FizzBuzz do
   def fizzbuzz(n) when rem(n, 15) == 0, do: "FizzBuzz"
-  def fizzbuzz(n) when rem(n,  5) == 0, do: "Buzz"
-  def fizzbuzz(n) when rem(n,  3) == 0, do: "Fizz"
-  def fizzbuzz(n),                      do: n
+  def fizzbuzz(n) when rem(n, 5) == 0, do: "Buzz"
+  def fizzbuzz(n) when rem(n, 3) == 0, do: "Fizz"
+  def fizzbuzz(n), do: n
 end
 
-Enum.each(1..100, fn(i) -> IO.puts FizzBuzz.fizzbuzz(i) end)
+Enum.each(1..100, fn i -> IO.puts(FizzBuzz.fizzbuzz(i)) end)
