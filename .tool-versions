@@ -4,3 +4,5 @@ nodejs 9.3.0
 elixir 1.6.0
 haskell 8.2.2
 clojure 1.8.0
+golang 1.9.2
+ruby 2.5.0
