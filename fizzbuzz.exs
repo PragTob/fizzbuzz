@@ -5,4 +5,4 @@ defmodule FizzBuzz do
   def fizzbuzz(n), do: n
 end
 
-Enum.each(1..100, fn i -> IO.puts(FizzBuzz.fizzbuzz(i)) end)
+Enum.each(1..100, fn i -> i |> FizzBuzz.fizzbuzz |> IO.puts end)
